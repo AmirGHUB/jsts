@@ -20,7 +20,7 @@
 
 	<modules>
 		<module>ApplicationService</module>
-	
+		<module>userinfo-service</module>
 	</modules>
 
 </project>
