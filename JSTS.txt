@@ -1,0 +1,16 @@
+Job Search Tracking Service
+
+Microservices
+			- Job-Search- main 
+			- User-service Microservice
+			- User-Application-Info Microservice
+			- Application-status Microservice
+			
+			Tasked
+	Task1 - preparing dev-env / git/github with jenkins 
+	Task2 - build each individual microservice
+	Task3 - put all to gether for the microservice - Spring cloud / Apache Kafka
+	Task4 - docker (containerization)
+	Task5 - Deploy on AWS - EC2
+	
+	
