@@ -1,4 +1,4 @@
-package com.JSTS.ApplicationMicroservice.model;
+package com.gashe.ApplicationService.model;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;

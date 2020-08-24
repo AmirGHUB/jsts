@@ -1,14 +1,15 @@
-package com.JSTS.ApplicationMicroservice.service;
+package com.gashe.ApplicationService.service;
 
 import java.util.List;
+
 import java.util.Optional;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import com.gashe.ApplicationService.DataAccess.ApplicationDAO;
+import com.gashe.ApplicationService.model.JobApplicationModel;
 
-import com.JSTS.ApplicationMicroservice.DataAccess.ApplicationDAO;
-import com.JSTS.ApplicationMicroservice.model.JobApplicationModel;
 
 @Service
 public class ApplicationService {

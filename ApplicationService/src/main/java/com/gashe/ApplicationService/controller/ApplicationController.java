@@ -1,6 +1,7 @@
-package com.JSTS.ApplicationMicroservice.controller;
+package com.gashe.ApplicationService.controller;
 
 import java.util.List;
+
 import java.util.Optional;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -12,8 +13,9 @@ import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.JSTS.ApplicationMicroservice.model.JobApplicationModel;
-import com.JSTS.ApplicationMicroservice.service.ApplicationService;
+import com.gashe.ApplicationService.model.JobApplicationModel;
+import com.gashe.ApplicationService.service.ApplicationService;
+
 
 @RestController
 public class ApplicationController {
