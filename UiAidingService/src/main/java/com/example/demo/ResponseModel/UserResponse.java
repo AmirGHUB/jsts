@@ -1,20 +1,12 @@
-package com.jstsapp.io.models;
-
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.Id;
+package com.example.demo.ResponseModel;
 
 import lombok.AllArgsConstructor;
-import lombok.Getter;
 import lombok.NoArgsConstructor;
-import lombok.Setter;
 
-@Entity
 @NoArgsConstructor
 @AllArgsConstructor
-public class User {
-	@Id
-	@GeneratedValue
+public class UserResponse {
+	
 	private long Id;
 	private String firstName;
 	private String lastName;
@@ -37,4 +29,6 @@ public class User {
 		this.lastName = lastName;
 	}
 	
+	
+
 }
