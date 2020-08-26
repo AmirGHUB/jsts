@@ -21,6 +21,7 @@
 	<modules>
 		<module>ApplicationService</module>
 		<module>userinfo-service</module>
+		<module>UiAidingService</module>
 	</modules>
 
 </project>
