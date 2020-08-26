@@ -3,6 +3,7 @@ package com.gashe.ApplicationService.service;
 import java.util.List;
 
 import java.util.Optional;
+import java.util.stream.Collectors;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -40,6 +41,12 @@ public class ApplicationService {
 	
 	public Optional<JobApplicationModel> getAnApplication(int appId) {
 		return applicationData.findById(appId);
+	}
+	
+	public List<JobApplicationModel> getUserApllications(int userId){
+		List<JobApplicationModel> filteredByUserId =   applicationData.findAll().stream()
+				.filter(j -> j.getUserID()==userId).collect(Collectors.toList());
+		return filteredByUserId;
 	}
 
 }

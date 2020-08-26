@@ -11,6 +11,7 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.gashe.ApplicationService.model.JobApplicationModel;
@@ -51,6 +52,11 @@ public class ApplicationController {
 	@GetMapping("/applications/{applicationId}")
 	public Optional<JobApplicationModel> getAnApplication( @PathVariable int applicationId) {
 		return applicationService.getAnApplication(applicationId);
+	}
+	
+	@RequestMapping("/getApplication/{userId}")
+	public List<JobApplicationModel> getUserApplications(@PathVariable("userId") int userId){
+		return applicationService.getUserApllications(userId);
 	}
 
 }
