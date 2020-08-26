@@ -24,6 +24,7 @@ public class UserController {
 
 	@PostMapping("/new")
 	public User registerNew(@RequestBody User user) {
+		
 		return userService.createUser(user);
 	}
 	@GetMapping("/all")

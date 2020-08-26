@@ -1,6 +1,7 @@
 package com.jstsapp.io.models;
 
 import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 
 import lombok.AllArgsConstructor;
@@ -11,6 +12,7 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 public class User {
 	@Id
+	@GeneratedValue
 	private long Id;
 	private String firstName;
 	private String lastName;
