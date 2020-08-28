@@ -1,0 +1,31 @@
+<!-- <app-dashboard></app-dashboard> -->
+<mat-toolbar style="background-color: aqua; padding-top: 0;">
+    <span>Job Search Tracking Service</span>
+</mat-toolbar>
+<ng-sidebar-container>
+    <ng-sidebar [opened]="opened">
+        <p>Side bar contents</p>
+        <button (click)="toggleSidebar()">
+            <span class="material-icons">
+                close
+            </span>
+        </button>
+        <ul class="menu">
+            <li><a [routerLink]="['/home']" routerLinkActive="router-link-active" (click)="toggleSidebar()">Home</a>
+            </li>
+            <li><a [routerLink]="['/dashboard']" (click)="toggleSidebar()">Dashboard</a></li>
+            <li><a [routerLink]="['/login']" (click)="toggleSidebar()">login</a>
+            </li>
+            <li><a [routerLink]="['/home']" (click)="toggleSidebar()">Link4</a>
+            </li>
+        </ul>
+    </ng-sidebar>
+    <div ng-sidebar-content>
+        <button (click)="toggleSidebar()">
+            <span class="material-icons">
+                menu
+            </span>
+        </button>
+        <router-outlet></router-outlet>
+    </div>
+</ng-sidebar-container>
